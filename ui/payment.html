@@ -1,0 +1,152 @@
+<html>
+<title> Payment Info </title>
+<head>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  background-color: aqua;
+  font-size: 25PX;
+  background: linear-gradient(to right, #e1e1eb, #838797);
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="carpayment.php" method="POST">
+  
+       
+        <div class="row">
+          
+          <div class="col-50">
+            <h1>PAYMENT PROCESS</h1>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder=" Enter your Name" required>
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="xxxx-xxxx-xxxx" required>
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="Enter expiry month" required>
+			      <label for="expmonth">CVV</label>
+            <input type="text" id="expmonth" name="cvv" placeholder="Enter CVV number" required>
+            <input type="submit" value="Continue to checkout" class="btn">
+          </div>
+        </div>
+        
+        
+      </form>
+    </div>
+  </div>
+
+
+</div>
+<p style="margin-left: 25px;margin-top: 55px; font-size: 25px;">Terms and Conditions <br>
+
+  These terms and conditions ("Terms") govern the use of the online payment services provided by [Your Company Name] ("We," "Us," or "Our"). By using our online payment services, you agree to comply with and be bound by these Terms.
+  <br>
+  1. Payment Authorization:
+  
+  By providing your payment information, you authorize us to charge or debit your account for the amount specified in the payment transaction.
+  <br>2. Security:
+  
+  We implement security measures to protect your payment information. However, you acknowledge that online transactions carry inherent risks, and we are not liable for any unauthorized access, disclosure, or loss of your payment information.
+  <br>3. Accuracy of Information:
+  
+  You are responsible for providing accurate payment information. We are not responsible for any errors or delays resulting from inaccurate information provided by you.
+  <br>4. Payment Confirmation:
+  
+  Upon successful completion of the payment transaction, you will receive a confirmation email. Please retain this confirmation for your records.
+  <br>5. Refunds:
+  
+  Refund requests are subject to our refund policy. Refunds, if applicable, will be processed in accordance with our refund policy.
+  For any questions or concerns regarding these Terms or our online payment services, please contact us at [Your Contact Information].</p>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<head>
+    <script type="text/javascript">
+        function r(){
+            window.location="home.html";
+        }
+    </script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, #0e0e0f, #616267);
+    font-size: 25px;
+
+}
+
+label{color:white;}
+input[type=text ], input[type=password],input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+button {
+	text-color:red;
+    background-color: rgba(65, 70, 70, 0.868);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+    color:tomato;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 10%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+.sign{
+    margin: 35px;
+}
+.signupbtn{
+    font-size: 25px;
+    width: 80%;
+    margin-left: 190px;
+    margin-bottom: 20px;
+    margin-top: 1px;
+
+}
+</style>
+<body>
+
+<h2 style="color:white; text-align:center;">SIGNUP</h2>
+
+<form action="upload.php" method = "POST">
+  <div class="imgcontainer">
+    <img src="lo.jpg"  class="avatar">
+  </div>
+    <hr>
+    <div class="sign">
+    <label for="Name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name"  required>
+    
+	<label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pwd" required>
+	
+	<label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+	
+	<label for="phone"><b>Phone No</b></label>
+    <input type="text" placeholder="Enter Phone no" name="phone" required>
+	
+	<label for="id"><b>ID</b></label>
+    <input type="number" placeholder="Enter ID" name="id" required>
+	
+	<label for="address"><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" name="ads" required>	
+	
+	<label for="aadhar"><b>Aadhar</b></label>
+    <input type="text" placeholder="Enter Aadhar No" name="adno" required>
+	
+
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    <p style="color:white;">By creating an account you agree to our Terms & Privacy.</p>
+</div>
+    <div class="clearfix">
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>

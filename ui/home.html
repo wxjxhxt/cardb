@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to ARS!</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+            background: linear-gradient(to right, #790978, #00d4ff);
+        }
+       
+        /* Navbar */
+        .w3-top {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .w3-bar {
+            background: linear-gradient(to right, #0e0e0f, #616267);
+            color: white;
+            height: 80px;
+            padding: 15px;
+            
+        }
+        a{
+            font-size: 20px;
+            margin-left: 60px;
+            
+        }
+        .w3-bar a {
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        .w3-bar a:hover {
+            background-color: #555;
+        }
+
+        /* Home Section */
+        #home {
+            background-image: url("pics/13.jpeg");
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        #home h2 {
+            color: black;
+            font-size: 5.5em;
+            margin-bottom: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #home h4 {
+            color: black;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        /* How it works Section */
+        #tour {
+            background: linear-gradient(to top, #0e0e0f, #616267);
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        #tour h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        #tour p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            
+        }
+
+        /* Buy New Section */
+        #buynew {
+            background: linear-gradient(to top, #0e0e0f, #616267);
+            color: #f3eded;
+            padding: 80px 20px;
+            text-align: center;
+            height: 500px;
+            margin:100px ;
+            box-shadow: 15px 15px 20px rgb(0, 0, 0.5);
+        }
+
+        #buynew h1 {
+
+            font-size: 4.0em;
+            margin-bottom: 20px;
+        }
+
+        /* Buy Used Section */
+        #buyused {
+            background-color: #fff;
+            color: #333;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        #buyused h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        .w3-footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 20px;
+            text-align: center;
+        }
+        
+        .container-fluid{
+            font-size: 25px;
+            
+
+        }
+        
+
+
+
+
+
+
+
+        #sell {
+        background: linear-gradient(to right, #2f2f2d, #c0bfb8); /* Example gradient background */
+        color: #333; /* Text color */
+        padding: 100px;
+        text-align: center;
+        height: 1400px;
+        color: #0e0e0f;
+    }
+
+    #carselectused {
+        margin: 0 auto; /* Center the form horizontally */
+        max-width: 400px; /* Adjust the maximum width as needed */
+    }
+
+    #carselectused select,
+    #carselectused input {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    #carselectused button {
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    </style>
+</head>
+
+<body >
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-card">
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#buynew" class="w3-bar-item w3-button">BUY</a>
+            <a href="#sell" class="w3-bar-item w3-button">SELL</a>
+            <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <div id="home">
+        <h2>ARS CAR TRADE</h2>
+        <br>
+        <h4>
+            ARS Car Trade provides a platform for easy, fast, secure and convenient buy and sell of cars. We also provide
+            recasting services, loan, and insurance options. We are market leaders in car trading, and security for our
+            customers is our primary concern.
+        </h4>
+    </div>
+
+    <!-- How it works Section -->
+    <div id="tour">
+        <h1>How ARS Car Trade Works?</h1>
+        <p>ARS Car Trade has partnered with over 20 domestic and international car brands to provide a wide range of
+            options to choose a car that best suits your needs. We sell both new and used cars. We make sure that used
+            cars have all required documents and the condition of the used car is verified by our staff. We provide
+            recast services for both used and new cars, which includes a wide range of modifications. We also have
+            collaborated with banks and insurance providers to provide a number of insurance and loan options.</p>
+    </div>
+
+
+
+    <!-- Buy New Section -->
+    <div id="buynew">
+        <h1>Want to buy a car?</h1>
+        <h2>Select specifications</h2>
+        <br>
+        <br>
+        <div class="container-fluid" id="carselectnew">
+            <form action="carview.php" method="post">
+                Select Brand :
+                <select name="brand" style="margin-right: 45px; background: transparent; border: transparent; color: white; font-size: 25px;">
+                    <option value="Tata" style="background:black; ">Tata</option>
+                    <option value="fiat" style="background:black; ">Fiat</option>
+                    <option value="audi" style="background:black; ">Audi</option>
+                    <option value="Hyundai" style="background:black; ">Hyundai</option>
+                    <option value="Mercedes Benz Cars" style="background:black; ">Mercedes Benz Cars</option>
+                    <option value="Honda" style="background:black; ">Honda</option>
+                    <option value="Lexus Cars" style="background:black; ">Lexus Cars</option>
+                    <option value="Volkswagen" style="background:black; ">Volkswagen</option>
+                    <option value="Maruti Suzuki" style="background:black; ">Maruti Suzuki</option>
+                    <option value="Toyota" style="background:black; ">Toyota</option>
+                    <option value="Ford" style="background:black; ">Ford</option>
+                    <!-- Add more options as needed -->
+                </select>
+                Select Vehicle Type :
+                <select name="vehicletype" style="margin-right: 45px; background: transparent; border: transparent; color: white; font-size: 25px;"">
+                    <option value="SUV" style="background:black;">SUV</option>
+                    <option value="Hatchback" style="background:black;">Hatchback</option>
+                    <option value="Sedan" style="background:black;">Sedan</option>
+                </select>
+                <br>
+                <button class="w3-button w3-black w3-section w3-right" type="submit" value="Submit"
+                    style="margin-right:350px; border-radius: 15px; box-shadow: 5px 5px 10px rgb(110, 114, 114);">check</button>
+                    
+            </form>
+            <form action="viewall.php">
+               <button class="w3-button w3-black w3-section w3-right" type="submit" style="margin-right:-250px; border-radius: 15px; box-shadow: 5px 5px 10px rgb(110, 114, 114);">view all</button>
+            </form>
+            </div>
+        </h4>
+    </div>
+
+    
+    <!-- Sell Section -->
+    
+<div id="sell">
+    <h1>Want to Sell your Car ? </h1>
+    <h2>Provide specifications of your car</h2>
+    <br>
+    <br>
+    <div class="container-fluid" id="carselectused">
+        <form action="carsell.php" method="post">
+            Select Brand :
+            <select name="brand">
+                <option value="Tata"  >Tata</option>
+                    <option value="fiat" >Fiat</option>
+                    <option value="audi" > Audi</option>
+                    <option value="Hyundai" >Hyundai</option>
+                    <option value="Mercedes Benz Cars" >Mercedes Benz Cars</option>
+                    <option value="Honda" >Honda</option>
+                    <option value="Lexus Cars" >Lexus Cars</option>
+                    <option value="Volkswagen" >Volkswagen</option>
+                    <option value="Maruti Suzuki" >Maruti Suzuki</option>
+                    <option value="Toyota"> Toyota</option>
+                    <option value="Ford" >Ford</option>
+                <!-- Add more options as needed -->
+            </select>
+            <br>
+
+            Select Vehicle Type :
+            <select name="vehicletype">
+                <option value="SUV">SUV</option>
+                <option value="Hatchback">Hatchback</option>
+                <option value="Sedan">Sedan</option>
+            </select>
+            <br>
+
+            Enter Car Name :
+            <input type="text" name="carname" placeholder="Tigor"><br>
+           
+            Enter Car ID :
+            <input type="text" name="carid" placeholder="4505"><br>
+            
+            FUEL TYPE :
+            <select name="fuel">
+                <option value="petrol">petrol</option>
+                <option value="Desiel">Desiel</option>
+            </select>
+            <br>
+            Transmission Type
+            <select name="transtype">
+                <option value="Auto">Auto</option>
+                <option value="Manual">Manual</option>
+            </select>
+            <br>
+
+            Colour
+            <select name="colour">
+                <option value="Red">Red</option>
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <!-- Add more options as needed -->
+            </select>
+            <br>
+
+            Mileage
+            <input type="text" name="mileage" placeholder="12.3">
+            <br>
+
+            Price
+            <input type="number" name="price" placeholder="5,00,000">
+            <br>
+               <button class="w3-button w3-black w3-section w3-right" type="submit" value="Submit">Submit</button>
+              
+        </form>
+    </div>
+</div>
+
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <h2>Contact</h2>
+        <p><i>For any queries or feedback, contact us</i></p>
+        <div>
+            <i class="fa fa-map-marker" style="width:30px"></i> Andheri, Mumbai<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: 8806333515 <br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: arscartrade@gmail.com<br>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="w3-footer">
+        <p>&copy; 2024 ARS Car Trade</p>
+    </div>
+
+</body>
+
+</html>
